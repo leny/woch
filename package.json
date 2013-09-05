@@ -1,0 +1,38 @@
+{
+  "name": "woch",
+  "description": "Yet a simple in-memory key/value storage module",
+  "version": "0.0.1",
+  "homepage": "https://github.com/leny/woch",
+  "author": {
+    "name": "Leny",
+    "email": "info@flatland.be",
+    "url": "http://leny.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leny/woch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leny/woch/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/leny/woch/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/woch",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "keywords": []
+}
