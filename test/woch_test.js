@@ -9,8 +9,6 @@ module.exports = {
     },
 
     "Woch Tests": function( test ) {
-        test.expect( 24 );
-
         woch.set( "foo", "bar" );
         woch.set( "bar", "foo" );
         test.equal( woch.length, 2, "woch.length should be 0" );
@@ -38,6 +36,7 @@ module.exports = {
         woch.set( "array", aArray );
         woch.set( "object", oObject );
         woch.set( "bool", true );
+        woch.set( "constructor", "foo" );
 
         test.equal( woch.get( "string" ), "bar", "woch.get( \"string\" ) should be \"bar\"" );
         test.equal( woch.get( "number" ), 42, "woch.get( \"number\" ) should be 42" );
@@ -45,6 +44,7 @@ module.exports = {
         test.deepEqual( woch.get( "object" ), oObject, "woch.get( \"object\" ) should be {Object}" );
         test.strictEqual( woch.get( "bool" ), true, "woch.get( \"bool\" ) should be true" );
         test.equal( woch.get( "unknown" ), undefined, "woch.get( \"string\" ) should be undefined" );
+        test.equal( woch.get( "constructor" ), "foo", "woch.get( \"constructor\" ) should be \"foo\"" );
 
         test.equal( woch.getItem( "string" ), "bar", "woch.getItem( \"string\" ) should be \"bar\"" );
         test.equal( woch.getItem( "number" ), 42, "woch.getItem( \"number\" ) should be 42" );
