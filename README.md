@@ -1,5 +1,5 @@
 # Wòch
-[![Build Status](https://secure.travis-ci.org/leny/woch.png?branch=master)](http://travis-ci.org/leny/woch)
+[![Build Status](https://secure.travis-ci.org/leny/woch.png?branch=master)](http://travis-ci.org/leny/woch) [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 Yet a simple in-memory key/value storage module
 
